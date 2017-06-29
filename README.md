@@ -15,7 +15,7 @@ prettier/react
 
 ## Set it up
 
-1. Install the package (& ESLint)
+### 1. Install the package (& ESLint)
 
 ```
 npm i eslint-config-react-native-prettier --save-dev
@@ -36,11 +36,11 @@ npm i eslint --save-dev
 yarn add -D eslint
 ```
 
-2. Configure your project to use it
+### 2. Configure your project to use it
 
 Create `.eslintrc` in your project root, and put this in it:
 
-```
+```json
 {
   "extends": [
     "react-native-prettier"
@@ -50,18 +50,18 @@ Create `.eslintrc` in your project root, and put this in it:
 
 Feel free to customize further as you would in other ESLint configs.
 
-3. Add scripts
+### 3. Add scripts
 
 In `package.json`, you might want to add a couple of useful scripts:
 
-```
+```json
 "scripts": {
   "lint": "eslint .",
   "prettier": "eslint . --fix"
 },
 ```
 
-4. Configure your editor
+### 4. Configure your editor
 
 I use Visual Studio Code along with the [vscode-eslint extension from
 Microsoft](https://github.com/Microsoft/vscode-eslint). I personally
